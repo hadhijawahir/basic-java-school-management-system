@@ -16,11 +16,9 @@ public class Teacher {
     public int getId() {
         return this.id;
     }
-
     public String getName() {
         return this.name;
     }
-
     public int getSalary() {
         return this.salary;
     }
