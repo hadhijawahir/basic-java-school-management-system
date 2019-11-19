@@ -16,35 +16,38 @@ public class School {
         totalMoneySpent = 0;
     }
 
+    // Teachers
     public List<Teacher> getTeachers() {
         return teachers;
     }
 
-    public void setTeachers(List<Teacher> teachers) {
-        this.teachers = teachers;
+    public void addTeacher(Teacher teacher) {
+        teachers.add(teacher);
     }
 
+    // Students
     public List<Student> getStudents() {
         return students;
     }
 
-    public void setStudents(List<Student> students) {
-        this.students = students;
+    public void addStudent(Student student) {
+        students.add(student);
     }
 
+    // Total Money
     public int getTotalMoneyEarned() {
         return totalMoneyEarned;
     }
 
-    public void setTotalMoneyEarned(int totalMoneyEarned) {
-        this.totalMoneyEarned = totalMoneyEarned;
+    public void updateTotalMoneyEarned(int moneyEarned) {
+        totalMoneyEarned += moneyEarned;
     }
 
     public int getTotalMoneySpent() {
         return totalMoneySpent;
     }
 
-    public void setTotalMoneySpent(int totalMoneySpent) {
-        this.totalMoneySpent = totalMoneySpent;
+    public void updateTotalMoneySpent(int moneySpent) {
+        totalMoneyEarned -= moneySpent;
     }
 }
