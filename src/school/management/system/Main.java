@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) {
 
         Teacher jeevani = new Teacher(1,"Jeevani", 500);
-        Teacher ajantha = new Teacher(2, "Ajanatha", 750);
+        Teacher ajantha = new Teacher(2, "Ajantha", 750);
         Teacher hewagamage = new Teacher(3, "Hewagamage", 1000);
 
         List<Teacher> teacherList = new ArrayList<>();
@@ -31,6 +31,7 @@ public class Main {
         System.out.println("UCSC has earned: Rs. " + ucsc.getTotalMoneyEarned());
 
         System.out.println("SALARY PAYMENTS");
-
+        jeevani.receiveSalary(jeevani.getSalary());
+        System.out.println("UCSC has spent salary to " + jeevani.getName() + " and now has " + ucsc.getTotalMoneyEarned());
     }
 }
