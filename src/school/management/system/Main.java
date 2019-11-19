@@ -32,6 +32,6 @@ public class Main {
 
         System.out.println("SALARY PAYMENTS");
         jeevani.receiveSalary(jeevani.getSalary());
-        System.out.println("UCSC has spent salary to " + jeevani.getName() + " and now has " + ucsc.getTotalMoneyEarned());
+        System.out.println("UCSC has spent salary of " + jeevani.getSalary() + " to Dr." + jeevani.getName() + " and now has " + ucsc.getTotalMoneyEarned());
     }
 }
