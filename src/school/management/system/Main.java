@@ -33,5 +33,16 @@ public class Main {
         System.out.println("SALARY PAYMENTS");
         jeevani.receiveSalary(jeevani.getSalary());
         System.out.println("UCSC has spent salary of " + jeevani.getSalary() + " to Dr." + jeevani.getName() + " and now has " + ucsc.getTotalMoneyEarned());
+        ajantha.receiveSalary(ajantha.getSalary());
+        System.out.println("UCSC has spent salary of " + ajantha.getSalary() + " to Dr." + ajantha.getName() + " and now has " + ucsc.getTotalMoneyEarned());
+        hewagamage.receiveSalary(hewagamage.getSalary());
+        System.out.println("UCSC has spent salary of " + hewagamage.getSalary() + " to Dr." + hewagamage.getName() + " and now has " + ucsc.getTotalMoneyEarned());
+
+        System.out.println("STUDENT DETAILS");
+        System.out.println(hadhi);
+
+        System.out.println("TEACHER DETAILS");
+        System.out.println(hewagamage);
+
     }
 }
